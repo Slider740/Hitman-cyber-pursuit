@@ -27,28 +27,13 @@ public class WeaponPickup : MonoBehaviour
 
         if (other.CompareTag("Player") && Input.GetKeyUp(pickupKey))
         {
-            Debug.Log("E key pressed."); // Log when the E key is detected
-
             Weapon weapon = GetComponent<Weapon>();
-            if (weapon != null)
-            {
-                Debug.Log("Weapon found: " + weapon.weaponName); // Log the weapon's name
-            }
-            else
-            {
-                Debug.LogError("Weapon script is missing on this GameObject!"); // Log if the Weapon script is missing
-            }
-
             if (inventory != null)
             {
                 inventory.Additem(weapon);
                 gameObject.SetActive(false);
-                Debug.Log("Weapon added to inventory."); // Log when the weapon is added to the inventory
             }
-            else
-            {
-                Debug.LogError("Inventory reference is missing!"); // Log if the Inventory reference is not set
-            }
+
         }
     }
 }
