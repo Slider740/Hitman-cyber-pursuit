@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d650fd966dce53848976bf273f2a8bdf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.71
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d650fd966dce53848976bf273f2a8bdf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d650fd966dce53848976bf273f2a8bdf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.04
+      value: -0.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d650fd966dce53848976bf273f2a8bdf,
         type: 3}
@@ -83,6 +83,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6725764779670341357}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d650fd966dce53848976bf273f2a8bdf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3744864209286826}
   m_SourcePrefab: {fileID: 100100000, guid: d650fd966dce53848976bf273f2a8bdf, type: 3}
 --- !u!1 &5934846500629792285 stripped
 GameObject:
@@ -166,3 +170,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   pickupKey: 101
+--- !u!114 &3744864209286826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934846500629792285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393ae33bc1b64324d8ded6129a762a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDistance: 20
