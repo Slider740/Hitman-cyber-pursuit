@@ -13,18 +13,10 @@ public class WeaponPickup : MonoBehaviour
         {
             inventory = FindObjectOfType<Inventory>();
         }
-
-        if (inventory == null)
-        {
-            Debug.LogError("inventory script not found in scene");
-        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        // Log when the player enters the trigger
-        Debug.Log("Player is near the weapon.");
-
         if (other.CompareTag("Player") && Input.GetKeyUp(pickupKey))
         {
             Weapon weapon = GetComponent<Weapon>();
