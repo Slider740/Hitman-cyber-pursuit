@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fafb1332e59e21b4ca114a8516623103,
         type: 3}
       propertyPath: m_Name
-      value: hallwayhalfgoedeversie
+      value: Hallway Half
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
