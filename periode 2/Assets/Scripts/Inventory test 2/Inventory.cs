@@ -9,7 +9,6 @@ public class Inventory : MonoBehaviour
     public GameObject inventoryUI;
     public Transform playerHand; //Reference to the players hand transform
     private bool isInventoryOpen = false;
-    public Inventory inventory;
 
     // Update is called once per frame
     void Update()
@@ -25,21 +24,18 @@ public class Inventory : MonoBehaviour
     {
         items.Add (weapon);
         UpdateInventoryUI();
-        Debug.Log(weapon.weaponName + "added to inventory");
     }
 
     public void EquipWeapon(Weapon weapon)
     {
         GameObject equippedWeapon = Instantiate(weapon.gameObject, playerHand.position, playerHand.rotation, playerHand);
         equippedWeapon.SetActive(true);
-        Debug.Log(weapon.weaponName + "equipped!");
     }
 
     public void RemoveItem(Weapon weapon)
     {
         items.Remove(weapon);
         UpdateInventoryUI();
-        Debug.Log(weapon.weaponName + "removed from inventory");
     }
 
     public void UpdateInventoryUI()
